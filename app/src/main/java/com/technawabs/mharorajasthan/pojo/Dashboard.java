@@ -116,8 +116,8 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
      */
     private void loadNavHeader() {
         // name, website
-        txtName.setText("Ravi Tamada");
-        txtWebsite.setText("www.androidhive.info");
+        txtName.setText("Ankit Khurana");
+        txtWebsite.setText("Aadhar User");
 
         // loading header background image
         Glide.with(this).load(urlNavHeaderBg)
