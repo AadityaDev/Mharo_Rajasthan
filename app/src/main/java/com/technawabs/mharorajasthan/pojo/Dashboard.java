@@ -1,5 +1,6 @@
 package com.technawabs.mharorajasthan.pojo;
 
+import android.net.Uri;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -29,7 +30,8 @@ import com.technawabs.mharorajasthan.fragments.Notifications;
 import com.technawabs.mharorajasthan.fragments.Policies;
 import com.technawabs.mharorajasthan.other.CircleTransform;
 
-public class Dashboard extends AppCompatActivity {
+public class Dashboard extends AppCompatActivity implements Home.OnFragmentInteractionListener,Forms.OnFragmentInteractionListener,
+Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListener{
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -124,7 +126,7 @@ public class Dashboard extends AppCompatActivity {
                 .into(imgNavHeaderBg);
 
         // Loading profile image
-        Glide.with(this).load(urlProfileImg)
+        Glide.with(this).load(R.mipmap.ic_launcher_round)
                 .crossFade()
                 .thumbnail(0.5f)
                 .bitmapTransform(new CircleTransform(this))
@@ -362,5 +364,15 @@ public class Dashboard extends AppCompatActivity {
             fab.show();
         else
             fab.hide();
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
