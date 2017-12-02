@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">Mharo Rajasthan</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="app_name">म्हारो</string>
+    <string name="title_activity_login">साइन इन करें</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
+    <string name="prompt_email">ईमेल</string>
+    <string name="prompt_password">पासवर्ड</string>
+    <string name="action_sign_in">साइन इन करें या रजिस्टर</string>
+    <string name="action_sign_in_short">साइन इन करें</string>
+    <string name="error_invalid_email">यह ईमेल पता अमान्य है</string>
+    <string name="error_invalid_password">यह पासवर्ड बहुत छोटा है</string>
+    <string name="error_incorrect_password">यह पासवर्ड गलत है</string>
+    <string name="error_field_required">यह फ़ील्ड आवश्यक है</string>
+    <string name="permission_rationale">"संपर्क अनुमतियों को ईमेल प्रदान करने के लिए आवश्यक हैं
+        प्राप्तियां।"
     </string>
 
     <string-array name="services_array">
@@ -22,4 +22,42 @@
         <item>Bank Account</item>
         <item>Aadhar Card Request</item>
     </string-array>
+
+    <string name="next">आगे</string>
+    <string name="skip">छोड़ें</string>
+    <string name="start">समझ गये</string>
+
+    <string name="slide_1_title">योजनाओं की सरल जानकारी</string>
+    <string name="slide_2_title">सभी फॉर्म एक जगह</string>
+    <string name="slide_3_title">जन जन की जागरूकता </string>
+    <string name="slide_4_title">एप आपकी अपनी भाषा मे</string>
+
+    <string name="navigation_drawer_open">नेविगेशन ड्रॉवर खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉवर को बंद करें</string>
+    <string name="openDrawer">खुला</string>
+    <string name="closeDrawer">बंदr</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">होम</string>
+    <string name="nav_policy">नीति और योजनाएं</string>
+    <string name="nav_forms">फोर्म्स भरे</string>
+    <string name="nav_notifications">सूचनाएं</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>होम</item>
+        <item>नीति और योजनाएं</item>
+        <item>फोर्म्स भरे</item>
+        <item>सूचनाएं</item>
+    </string-array>
+
+
+    <string name="action_clear_all">हटाए</string>
+    <string name="action_logout">लोग आउट</string>
+    <string name="action_mark_all_read">सब पढ़े</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

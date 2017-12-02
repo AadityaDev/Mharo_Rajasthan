@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,7 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.technawabs.mharorajasthan.network.RequestHandler;
+import com.technawabs.mharorajasthan.pojo.Dashboard;
 import com.technawabs.mharorajasthan.pojo.LoginResponse;
 
 import org.json.JSONException;
@@ -106,7 +108,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     private boolean mayRequestContacts() {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+        /*if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
             return true;
         }
         if (checkSelfPermission(READ_CONTACTS) == PackageManager.PERMISSION_GRANTED) {
@@ -123,7 +125,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     });
         } else {
             requestPermissions(new String[]{READ_CONTACTS}, REQUEST_READ_CONTACTS);
-        }
+        }*/
         return false;
     }
 
@@ -312,6 +314,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         protected Boolean doInBackground(Void... params) {
             try {
                 // Simulate network access.
+                Looper.prepare();
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 return false;
@@ -348,7 +351,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = null;
             showProgress(false);
             if (success) {
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                startActivity(new Intent(LoginActivity.this,Dashboard.class));
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
