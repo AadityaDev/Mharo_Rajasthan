@@ -14,4 +14,12 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string-array name="services_array">
+        <item>Gas Connection</item>
+        <item>Electricity Connection</item>
+        <item>Pansion Request</item>
+        <item>Bank Account</item>
+        <item>Aadhar Card Request</item>
+    </string-array>
 </resources>
