@@ -34,6 +34,26 @@ public class RequestHandler {
                 .addHeader("content-type", "application/json")
                 .addHeader("cache-control", "no-cache")
                 .addHeader("postman-token", "5363b8a1-3682-f710-caa5-a7286cf4db65")
+                .addHeader("Authorization", "Bearer ff8e02ccbf108f8a3379cfa85678d3a970e63810f977559b")
+                .build();
+        response = client.newCall(request).execute();
+        if(response!=null){
+            if(response.body()!=null){
+                res=response.body().string();
+            }
+        }
+        return res;
+    }
+
+    public String getUserDetailRequest(String url) throws IOException {
+        String res=new String();
+        request = new Request.Builder()
+                .url(url)
+                .get()
+                .addHeader("content-type", "application/json")
+                .addHeader("cache-control", "no-cache")
+                .addHeader("postman-token", "5363b8a1-3682-f710-caa5-a7286cf4db65")
+                .addHeader("Authorization", "Bearer ff8e02ccbf108f8a3379cfa85678d3a970e63810f977559b")
                 .build();
         response = client.newCall(request).execute();
         if(response!=null){
