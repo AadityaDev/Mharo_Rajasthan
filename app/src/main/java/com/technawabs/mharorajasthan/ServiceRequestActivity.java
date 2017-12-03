@@ -86,32 +86,32 @@ public class ServiceRequestActivity extends AppCompatActivity implements Adapter
         View focusView = null;
         // Check for a valid name, if the user entered one.
         if (TextUtils.isEmpty(fullName.getText())) {
-            fullName.setError("Field is empty");
+            fullName.setError("फ़ील्ड खाली है");
             focusView = fullName;
             cancel = true;
         }
         if (TextUtils.isEmpty(mobile.getText())) {
-            mobile.setError("Field is empty");
+            mobile.setError("फ़ील्ड खाली है");
             focusView = mobile;
             cancel = true;
         }
         if (TextUtils.isEmpty(aadhar.getText())) {
-            aadhar.setError("Field is empty");
+            aadhar.setError("फ़ील्ड खाली है");
             focusView = aadhar;
             cancel = true;
         }
         if (TextUtils.isEmpty(address.getText())) {
-            address.setError("Field is empty");
+            address.setError("फ़ील्ड खाली है");
             focusView = address;
             cancel = true;
         }
         if (TextUtils.isEmpty(state.getText())) {
-            state.setError("Field is empty");
+            state.setError("फ़ील्ड खाली है");
             focusView = state;
             cancel = true;
         }
         if (TextUtils.isEmpty(pincode.getText())) {
-            pincode.setError("Field is empty");
+            pincode.setError("फ़ील्ड खाली है");
             focusView = pincode;
             cancel = true;
         }
@@ -152,6 +152,7 @@ public class ServiceRequestActivity extends AppCompatActivity implements Adapter
                 @Override
                 public void onAnimationEnd(Animator animation) {
                     mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
+
                 }
             });
 

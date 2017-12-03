@@ -39,7 +39,7 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
     private ImageView imgNavHeaderBg, imgProfile;
     private TextView txtName, txtWebsite;
     private Toolbar toolbar;
-    private FloatingActionButton fab;
+//    private FloatingActionButton fab;
 
     // urls to load navigation header background image
     // and profile image
@@ -56,6 +56,7 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
     private static final String TAG_NOTIFICATIONS = "notifications";
     private static final String TAG_SETTINGS = "settings";
     public static String CURRENT_TAG = TAG_HOME;
+
 
     // toolbar titles respected to selected nav menu item
     private String[] activityTitles;
@@ -76,7 +77,7 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+       // fab = (FloatingActionButton) findViewById(R.id.fab);
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
@@ -88,13 +89,13 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         // load nav menu header data
         loadNavHeader();
@@ -117,7 +118,7 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
     private void loadNavHeader() {
         // name, website
         txtName.setText("Ankit Khurana");
-        txtWebsite.setText("Aadhar User");
+        txtWebsite.setText(R.string.user_type);
 
         // loading header background image
         Glide.with(this).load(urlNavHeaderBg)
@@ -360,10 +361,10 @@ Policies.OnFragmentInteractionListener,Notifications.OnFragmentInteractionListen
 
     // show or hide the fab
     private void toggleFab() {
-        if (navItemIndex == 0)
-            fab.show();
-        else
-            fab.hide();
+//        if (navItemIndex == 0)
+//            fab.show();
+//        else
+//            fab.hide();
     }
 
     @Override

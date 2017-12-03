@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Select service request" />
+            android:text="@string/service_type"/>
 
         <Spinner
             android:id="@+id/service_selection_spinner"
@@ -46,7 +46,7 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Full name"
+                android:hint="@string/full_name"
                 android:imeActionLabel="Name"
                 android:imeOptions="actionUnspecified"
                 android:singleLine="true" />
@@ -64,7 +64,7 @@
                 android:id="@+id/mobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile number"
+                android:hint="@string/mobile"
                 android:imeActionLabel="Mobile"
                 android:imeOptions="actionUnspecified"
                 android:singleLine="true" />
@@ -82,7 +82,7 @@
                 android:id="@+id/aadhar_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Aadhar number"
+                android:hint="@string/aadhar_number"
                 android:imeActionLabel="Mobile"
                 android:imeOptions="actionUnspecified"
                 android:singleLine="true" />
@@ -100,7 +100,7 @@
                 android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address"
+                android:hint="@string/address"
                 android:imeActionLabel="Mobile"
                 android:imeOptions="actionUnspecified"
                 />
@@ -118,7 +118,7 @@
                 android:id="@+id/state"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="State"
+                android:hint="@string/state"
                 android:imeActionLabel="Mobile"
                 android:imeOptions="actionUnspecified"
                 />
@@ -136,7 +136,7 @@
                 android:id="@+id/pin_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Pin Code"
+                android:hint="@string/pin"
                 android:imeActionLabel="Mobile"
                 android:imeOptions="actionUnspecified"
                 />
@@ -163,7 +163,7 @@
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"
                 android:textAllCaps="true"
-                android:text="submit"
+                android:text="@string/submit"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:gravity="center"

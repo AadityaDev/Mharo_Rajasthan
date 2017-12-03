@@ -16,31 +16,42 @@
     </string>
 
     <string-array name="services_array">
-        <item>Gas Connection</item>
-        <item>Electricity Connection</item>
-        <item>Pansion Request</item>
-        <item>Bank Account</item>
-        <item>Aadhar Card Request</item>
+        <item>गैस कनेक्शन</item>
+        <item>बिजली कनेक्शन</item>
+        <item>पेंशन अनुरोध</item>
+        <item>बैंक खाता</item>
+        <item>आधार कार्ड का अनुरोध</item>
     </string-array>
 
     <string name="next">आगे</string>
     <string name="skip">छोड़ें</string>
     <string name="start">समझ गये</string>
+    <string name="fill_form">फोर्म्स भरे</string>
 
     <string name="slide_1_title">योजनाओं की सरल जानकारी</string>
     <string name="slide_2_title">सभी फॉर्म एक जगह</string>
     <string name="slide_3_title">जन जन की जागरूकता </string>
     <string name="slide_4_title">एप आपकी अपनी भाषा मे</string>
+    <string name="field_error">फ़ील्ड खाली है</string>
 
     <string name="navigation_drawer_open">नेविगेशन ड्रॉवर खोलें</string>
     <string name="navigation_drawer_close">नेविगेशन ड्रॉवर को बंद करें</string>
     <string name="openDrawer">खुला</string>
     <string name="closeDrawer">बंदr</string>
+    <string name="user_type">आधार यूजर</string>
+    <string name="service_type">सेवा प्रकार</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="mobile">मोबाइल नंबर</string>
+    <string name="aadhar_number">आधार नंबर</string>
+    <string name="address">पता</string>
+    <string name="state">राज्य</string>
+    <string name="pin">पिन कोड</string>
+    <string name="submit">जमा करें</string>
 
     <!-- Navigation Drawer menu labels -->
     <string name="nav_home">होम</string>
     <string name="nav_policy">नीति और योजनाएं</string>
-    <string name="nav_forms">फोर्म्स भरे</string>
+    <string name="nav_forms">फोर्म्स</string>
     <string name="nav_notifications">सूचनाएं</string>
 
 
@@ -48,7 +59,7 @@
     <string-array name="nav_item_activity_titles">
         <item>होम</item>
         <item>नीति और योजनाएं</item>
-        <item>फोर्म्स भरे</item>
+        <item>फोर्म्स</item>
         <item>सूचनाएं</item>
     </string-array>
 
@@ -58,6 +69,8 @@
     <string name="action_mark_all_read">सब पढ़े</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">"..."</string>
+    
+    <string name="form_fill">फार्म भरे</string>
 
 </resources>
